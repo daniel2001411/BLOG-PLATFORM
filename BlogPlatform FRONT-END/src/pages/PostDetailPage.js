@@ -21,7 +21,7 @@ export default function PostDetailPage() {
       author: "User"
     });
     setComment('');
-    // Refresh post data
+    
     const updatedPost = await api.get(`/posts/${id}`);
     setPost(updatedPost.data);
   };
